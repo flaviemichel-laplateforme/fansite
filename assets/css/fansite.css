@@ -1,53 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    background-color: black;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 40px;
+    height: auto;
+
+
 }
 
-.header-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.nav-menu {
-    position: relative;
-}
-
-.menu-btn {
-    background: none;
+footer {
+    background: #393232;
+    width: 100%;
+    height: auto;
     color: white;
+    padding: 20px;
+
+
+}
+
+
+
+/***************************************************MENU***********************/
+.position {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 100%;
+    background-color: #333;
+}
+
+
+.liste {
+    list-style: none;
+}
+
+.titreLi {
+    color: white;
+    font-size: x-large;
+}
+
+.boutton {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    font-size: large;
     border: none;
-    font-size: 18px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
-.menu-list {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 40px;
-    background: #222;
-    border-radius: 5px;
-    min-width: 150px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    z-index: 10;
+/***********************************************************main*********************************************/
+.main {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
 }
 
-.menu-list li {
-    list-style: none;
-    padding: 10px 20px;
+.ctg {
+    width: 85%;
 }
 
-.menu-list li a {
+.image {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+h1 {
     color: white;
+    font-size: 26px;
+    margin-left: 60px;
+    font-family: 'Poppins', Roboto, sans-serif !important
+}
+
+p {
+    color: white;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 1.2em;
+    font-family: 'Roboto Regular', Helvetica, Arial, Lucida, sans-serif;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.test {
+    background-color: #e74a34;
+    font-size: 17px;
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif !important;
+    line-height: 1.7em !important;
+    border-radius: solid;
+    border-width: 2px;
+    padding: .3em 1em;
+    margin-left: 120px;
+    color: white;
+}
+
+.container1 {
+    display: flex;
+    /*aligne sur une ligne*/
+    justify-content: center;
+    gap: 5cm;
+    margin-top: 100px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items img {
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+
+}
+
+.textImg>a {
     text-decoration: none;
+}
+
+
+
+/*************************************************************************FOOTER***********************************************/
+
+.direction {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    gap: 2.5cm;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/*QUI SOMMES NOUS*/
+
+.main2 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+
+.titre {
+    color: black;
+    font-size: 26px;
+    margin-left: 60px;
+    font-style: unset;
+
+}
+
+.paragraphe {
+    color: black;
+}
+
+.paragraphe2 {
+    color: black;
+    margin-top: 63px;
+}
+
+.img2 {
+    width: 2px;
+    height: auto;
+}
+
+.video {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin: 80px;
+    gap: 3cm;
+
+
+}
+
+/************************************** CONTACT ************************************/
+.main3 {
+    background-color: #0062ff;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* espace entre les deux colonnes */
+    align-items: flex-start;
+    /* aligne en haut */
+    gap: 40px;
+    /* espace entre les colonnes */
+    max-width: 1000px;
+    margin: 0 auto;
+    /* centre la structure */
+}
+
+.left,
+.right {
+    flex: 1;
+    /* chaque colonne prend la moitié de l’espace */
+}
+
+.left img {
+    display: block;
+    margin: 20px auto 0;
+    /* centre horizontalement l’image */
+    max-width: 100%;
+    /* évite qu’elle dépasse */
+    height: auto;
+}
+
+.text {
+    color: black;
+}
+
+.text-w {
+    color: white;
+    margin-left: auto;
+}
+
+.right {
+    background-color: white;
+    margin-top: 1cm;
+    text-align: center;
+    margin-right: -1cm;
+
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.button {
+    background-color: rgb(255, 89, 0);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ESSAI NAVIGATEUR MENU */
+
+/* Style du menu principal */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    /* nécessaire pour le sous-menu */
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #444;
+}
+
+/* Style du sous-menu */
+nav ul li ul {
+    display: none;
+    /* caché par défaut */
+    position: absolute;
+    top: 100%;
+    /* sous le parent */
+    left: 0;
+    background: #444;
+    min-width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 15px;
+    color: #fff;
+    white-space: nowrap;
+    /* évite que ça coupe */
+}
+
+nav ul li ul li a:hover {
+    background: #555;
+}
+
+/* Apparition au survol */
+nav ul li:hover ul {
     display: block;
 }
 
-.nav-menu.open .menu-list {
-    display: block;
+/* MEDIA QUERIES TAILLE ECRAN RESPONSIVE*/
+
+@media (width <=500px) {
+    .button {
+        color: rgb(42, 13, 138);
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2px;
+        margin: auto;
+    }
+
 }
