@@ -5,7 +5,9 @@
 
 header {
     display: flex;
+    width: 100%;
     height: auto;
+
 
 
 }
@@ -15,7 +17,6 @@ footer {
     width: 100%;
     height: auto;
     color: white;
-    padding: 20px;
 
 
 }
@@ -27,7 +28,6 @@ footer {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin: 20px;
     width: 100%;
     background-color: #333;
 }
@@ -38,7 +38,7 @@ footer {
 }
 
 .titreLi {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: x-large;
 }
 
@@ -58,27 +58,32 @@ footer {
     display: flex;
     justify-content: space-around;
 
+
+}
+
+.texteArt {
+    color: black;
 }
 
 .ctg {
-    width: 85%;
+    width: 100%;
 }
 
 .image {
     width: 100%;
     height: 100%;
-    padding: 20px;
+
 }
 
 h1 {
-    color: white;
+    color: rgb(14, 13, 13);
     font-size: 26px;
     margin-left: 60px;
     font-family: 'Poppins', Roboto, sans-serif !important
 }
 
 p {
-    color: white;
+    color: rgb(11, 11, 11);
     margin-left: 60px;
     margin-right: 60px;
     line-height: 1.2em;
@@ -186,6 +191,14 @@ footer a:hover {
     gap: 3cm;
 
 
+}
+
+.texte3 {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.2em;
+    font-family: 'Roboto Regular', Helvetica, Arial, Lucida, sans-serif;
 }
 
 /************************************** CONTACT ************************************/
