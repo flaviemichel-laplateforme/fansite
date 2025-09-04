@@ -162,53 +162,14 @@ footer a:hover {
 }
 
 
-/*QUI SOMMES NOUS*/
+/*ACTUALITES*/
 
-.main2 {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    background-color: #ffffff;
-}
-
-.titre {
-    color: black;
-    font-size: 26px;
-    margin-left: 60px;
-    font-style: unset;
-
-}
-
-.paragraphe {
-    color: black;
-}
-
-.paragraphe2 {
-    color: black;
-    margin-top: 63px;
-}
-
-.img2 {
-    width: 2px;
+.image {
+    width: 80%;
     height: auto;
-}
-
-.video {
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    margin: 80px;
-    gap: 3cm;
-
-
-}
-
-.texte3 {
-    color: rgb(255, 255, 255);
-    font-size: 10px;
-    text-align: center;
-    line-height: 1.2em;
-    font-family: 'Roboto Regular', Helvetica, Arial, Lucida, sans-serif;
+    margin-left: 60px;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
 /************************************** CONTACT ************************************/
