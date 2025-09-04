@@ -180,6 +180,33 @@ footer a:hover {
     justify-content: center;
 }
 
+/* ************************************LIENS RESEAUX SOCIAUX************************** */
+.logo-container {
+    display: flex;
+    /* Affiche les logos en ligne */
+    gap: 10px;
+    /* Espace entre les logos */
+    align-items: center;
+    /* Aligne les logos verticalement */
+    justify-content: space-between;
+    /* Centre les logos horizontalement */
+    flex-wrap: wrap;
+    /* Passe à la ligne si trop long */
+    padding: 50px;
+}
+
+.logo-container img {
+    width: 100px;
+    /* Taille fixe pour tous les logos */
+    height: auto;
+    /* Garde les proportions */
+    object-fit: contain;
+    /* S'assure que le logo rentre bien */
+}
+
+
+
+
 /************************************** CONTACT ************************************/
 
 /* style.css */
