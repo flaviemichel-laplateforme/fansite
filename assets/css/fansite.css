@@ -204,6 +204,7 @@ footer a:hover {
     /* S'assure que le logo rentre bien */
 }
 
+
 .titreReseauh2 {
     color: rgb(7, 7, 7);
     text-align: center;
@@ -211,8 +212,35 @@ footer a:hover {
     font-size: xx-large;
 }
 
+/* Mise en forme liens fans création ID*/
 
+#liens-fans {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: auto;
+    width: auto;
+    margin-top: 20px;
 
+}
+
+#liens-fans ul {
+    list-style: none;
+    padding: 0;
+}
+
+#liens-fans li {
+    margin-bottom: 10px;
+}
+
+#liens-fans a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+#liens-fans a:hover {
+    text-decoration: underline;
+}
 
 /************************************** CONTACT ************************************/
 
