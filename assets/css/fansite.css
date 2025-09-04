@@ -14,9 +14,12 @@ footer {
     width: 100%;
     height: auto;
     color: white;
-
 }
 
+
+
+
+/*  */
 /***************************************************MENU***********************/
 .position {
     position: relative;
@@ -216,13 +219,16 @@ footer a:hover {
 
 #liens-fans {
     padding: 20px;
-    background-color: #f4f4f4;
+    background: linear-gradient(90deg, #1d976c, #f6e27a, #e63946);
     border-radius: 8px;
     margin: auto;
     width: auto;
     margin-top: 20px;
+    text-decoration: none;
+
 
 }
+
 
 #liens-fans ul {
     list-style: none;
