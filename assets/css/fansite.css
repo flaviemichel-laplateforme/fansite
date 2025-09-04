@@ -7,9 +7,6 @@ header {
     display: flex;
     width: 100%;
     height: auto;
-
-
-
 }
 
 footer {
@@ -18,10 +15,7 @@ footer {
     height: auto;
     color: white;
 
-
 }
-
-
 
 /***************************************************MENU***********************/
 .position {
@@ -57,9 +51,7 @@ footer {
     color: black;
 }
 
-.ctg {
-    width: 100%;
-}
+
 
 .image {
     width: 100%;
@@ -77,30 +69,9 @@ footer {
 
 
 
-.container1 {
-    display: flex;
-    /*aligne sur une ligne*/
-    justify-content: center;
-    gap: 5cm;
-    margin-top: 100px;
-}
 
-.items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.items img {
-    height: 50px;
-    width: auto;
-    border-radius: 5px;
 
-}
-
-.textImg>a {
-    text-decoration: none;
-}
 
 
 
@@ -114,16 +85,6 @@ footer {
     padding-right: 1cm;
     gap: 2.5cm;
 }
-
-.listeFooter {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-
 
 footer a {
     color: inherit;
@@ -151,7 +112,22 @@ footer a:hover {
 
 
 .titreh1 {
-    color: rgb(227, 22, 22);
+    color: rgb(7, 7, 7);
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.divform {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* ESSAI NAVIGATEUR MENU */
