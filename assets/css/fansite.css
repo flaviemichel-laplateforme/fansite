@@ -208,45 +208,60 @@ footer a:hover {
 }
 
 
-.titreReseauh2 {
-    color: rgb(7, 7, 7);
-    text-align: center;
-    margin-top: 20px;
-    font-size: xx-large;
-}
 
 /* Mise en forme liens fans création ID*/
 
 #liens-fans {
-    padding: 20px;
+
     background: linear-gradient(90deg, #1d976c, #f6e27a, #e63946);
-    border-radius: 8px;
-    margin: auto;
-    width: auto;
-    margin-top: 20px;
-    text-decoration: none;
-
+    display: flex;
+    /* Affiche les logos en ligne */
+    gap: 10px;
+    /* Espace entre les logos */
+    align-items: center;
+    /* Aligne les logos verticalement */
+    justify-content: space-around;
+    /* Centre les logos horizontalement */
+    flex-wrap: wrap;
+    /* Passe à la ligne si trop long */
+    padding: 50px;
 
 }
 
 
-#liens-fans ul {
-    list-style: none;
-    padding: 0;
-}
+
+
 
 #liens-fans li {
     margin-bottom: 10px;
 }
 
 #liens-fans a {
-    color: #0077cc;
+    color: #000000;
     text-decoration: none;
 }
 
 #liens-fans a:hover {
     text-decoration: underline;
 }
+
+.titreReseauh2 {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    margin-top: 20px;
+    font-size: xx-large;
+    background: linear-gradient(90deg, #1d976c, #f6e27a, #e63946);
+}
+
+#liens-fans a img {
+    width: 100px;
+    /* Taille fixe pour tous les logos */
+    height: auto;
+    /* Garde les proportions */
+    object-fit: contain;
+    /* S'assure que le logo rentre bien */
+}
+
 
 /************************************** CONTACT ************************************/
 
