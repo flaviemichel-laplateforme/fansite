@@ -123,6 +123,7 @@ footer a:hover {
     font-size: 80px;
     margin-top: 35px;
     background: linear-gradient(to bottom right, #8B0000, #FFD700, #006400);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .titreh2 {
@@ -131,6 +132,7 @@ footer a:hover {
     font-size: xx-large;
     margin-top: 35px;
     background: linear-gradient(to bottom right, #8B0000, #FFD700, #006400);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -168,6 +170,34 @@ footer a:hover {
 
 .album-container>p {
     width: 500px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.album-container a {
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.album-container a:hover {
+    text-decoration: underline;
+    color: #f39c12;
+    /* Couleur au survol */
+    transform: scale(1.05);
+
+}
+
+.album-container img:hover {
+    transform: scale(1.50);
+    /* Agrandit l'image au survol */
+    transition: transform 0.3s ease;
+    /* Animation douce */
+    z-index: 10;
+    /* Place l'image au-dessus des autres */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Ajoute une ombre */
 }
 
 /************************************* EVENEMENTS *************************************/
@@ -198,7 +228,10 @@ footer a:hover {
 
 .evenement-container>p {
     width: 500px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
 
 
 
