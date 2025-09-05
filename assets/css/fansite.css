@@ -414,25 +414,77 @@ footer a:hover {
 
 
 .titreh1 {
+
     color: rgb(7, 7, 7);
     text-align: center;
-    margin-top: 20px;
+    font-size: 50px;
+    margin-top: 35px;
+    background: linear-gradient(to bottom right, #8B0000, #FFD700, #006400);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#contact {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #fff;
+    border-left: 8px solid;
+    border-image: linear-gradient(to bottom, #FF0000, #FFD700, #008000) 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
-    border-radius: 20px;
+    padding: 60px;
 }
 
-.divform {
-    margin-top: 20px;
-    margin-bottom: 20px;
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-/* ESSAI NAVIGATEUR MENU */
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2ecc71;
+    outline: none;
+}
+
+button {
+    background: linear-gradient(to right, #FF0000, #FFD700, #008000);
+    color: white;
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/************************* ESSAI NAVIGATEUR MENU ********************************************/
 
 /* Style du menu principal */
 
