@@ -117,11 +117,57 @@ footer a:hover {
 }
 
 /************************************** REALISATIONS********************************/
+.titreh11 {
+    color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 80px;
+    margin-top: 35px;
+    background: linear-gradient(to bottom right, #8B0000, #FFD700, #006400);
+}
 
 .titreh2 {
     color: rgb(7, 7, 7);
     text-align: center;
+    font-size: xx-large;
     margin-top: 35px;
+    background: linear-gradient(to bottom right, #8B0000, #FFD700, #006400);
+}
+
+
+.separator {
+    height: 10px;
+    background: linear-gradient(to right, #FF0000, #FFD700, #008000);
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.album-container {
+    display: flex;
+    /* Affiche les images en ligne */
+    gap: 10px;
+    /* Espacement */
+    align-items: center;
+    /* Aligne verticalement */
+    justify-content: space-around;
+    /* Centre horizontalement */
+    flex-wrap: wrap;
+    /* Passe à la ligne si trop long */
+    padding: 50px;
+
+}
+
+
+.album-container img {
+    width: 200px;
+    /* Taille fixe pour toutes les images */
+    height: auto;
+    /* Garde les proportions */
+    object-fit: cover;
+    /* S'assure que l'image rentre bien */
+}
+
+.album-container>p {
+    width: 500px;
 }
 
 /* ************************************PHOTOS*************************************** */
@@ -346,21 +392,15 @@ nav ul li:hover ul {
 }
 
 /* MEDIA QUERIES TAILLE ECRAN RESPONSIVE*/
-
-@media (width <=500px) {
-    .button {
-        color: rgb(42, 13, 138);
-        font-size: small;
+@media (width <=800px) {
+    body {
+        background-color: lightsalmon;
     }
 }
 
-@media screen and (max-width:1200px) {
-    .main {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 2px;
-        margin: auto;
-    }
+@media (width <=500px) {
 
+    body {
+        background-color: rgb(74, 15, 146);
+    }
 }
