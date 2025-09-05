@@ -125,19 +125,19 @@ footer a:hover {
 .titreh11 {
     color: rgb(7, 7, 7);
     text-align: center;
-    font-size: 80px;
-    margin-top: 35px;
+    font-size: 50px;
     background: linear-gradient(to bottom right, #8B0000, #FFD700, #006400);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .titreh2 {
     color: rgb(7, 7, 7);
     text-align: center;
     font-size: xx-large;
-    margin-top: 35px;
     background: linear-gradient(to bottom right, #8B0000, #FFD700, #006400);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    ;
 }
 
 
@@ -435,10 +435,9 @@ footer a:hover {
 
     color: rgb(7, 7, 7);
     text-align: center;
-    font-size: 50px;
-    margin-top: 35px;
     background: linear-gradient(to bottom right, #8B0000, #FFD700, #006400);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
 }
 
 
@@ -596,4 +595,13 @@ nav ul li:hover ul {
 .back-to-top:hover {
     transform: scale(1.2);
     opacity: 1;
+}
+
+/* ****************************************AUDIO****************************************** */
+
+audio {
+    width: 100%;
+    display: block;
+    margin: 0;
+    border-radius: 0;
 }
