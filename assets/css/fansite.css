@@ -352,6 +352,12 @@ footer a:hover {
     /* S'assure que le logo rentre bien */
 }
 
+.logo-container a img:hover {
+    box-shadow: 0 0 12px rgba(21, 255, 0, 0.6),
+        0 0 24px rgba(234, 205, 45, 0.6),
+        0 0 36px rgba(216, 49, 3, 0.6);
+    transform: scale(1.2);
+}
 
 
 /* Mise en forme liens fans création ID*/
