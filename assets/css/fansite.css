@@ -216,7 +216,6 @@ footer a:hover {
 
 }
 
-
 .evenement-container img {
     width: 200px;
     /* Taille fixe pour toutes les images */
@@ -232,7 +231,31 @@ footer a:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+.evenement-container a {
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: black;
+}
 
+.evenement-container a:hover {
+    text-decoration: underline;
+    color: #f39c12;
+    /* Couleur au survol */
+    transform: scale(1.05);
+
+}
+
+.evenement-container img:hover {
+    transform: scale(1.50);
+    /* Agrandit l'image au survol */
+    transition: transform 0.3s ease;
+    /* Animation douce */
+    z-index: 10;
+    /* Place l'image au-dessus des autres */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Ajoute une ombre */
+}
 
 
 
