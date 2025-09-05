@@ -170,6 +170,44 @@ footer a:hover {
     width: 500px;
 }
 
+/************************************* EVENEMENTS *************************************/
+.evenement-container {
+    display: flex;
+    /* Affiche les images en ligne */
+    gap: 10px;
+    /* Espacement */
+    align-items: center;
+    /* Aligne verticalement */
+    justify-content: space-around;
+    /* Centre horizontalement */
+    flex-wrap: wrap;
+    /* Passe à la ligne si trop long */
+    padding: 50px;
+
+}
+
+
+.evenement-container img {
+    width: 200px;
+    /* Taille fixe pour toutes les images */
+    height: auto;
+    /* Garde les proportions */
+    object-fit: cover;
+    /* S'assure que l'image rentre bien */
+}
+
+.evenement-container>p {
+    width: 500px;
+}
+
+
+
+
+
+
+
+
+
 /* ************************************PHOTOS*************************************** */
 
 
