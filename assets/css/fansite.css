@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
 body {
@@ -768,7 +768,56 @@ nav ul li:hover ul {
     display: block;
 }
 
-/* MEDIA QUERIES TAILLE ECRAN RESPONSIVE*/
+/* MEDIA QUERIES TAILLE ECRAN RESPONSIVE CONTACT*/
+@media (max-width: 600px) {
+    main {
+        padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #contact {
+        max-width: 100%;
+        margin: 20px 0;
+        padding: 10px;
+        border-radius: 0;
+        box-shadow: none;
+        border-left: 4px solid #FFD700;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    .titreh1 {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .texte3 {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .liste2,
+    .logo-container2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .logo-container2 img {
+        width: 30px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 1em;
+    }
+}
+
+/* ESSAI */
 
 @media (width <=800px) {
     body {
@@ -999,6 +1048,46 @@ nav.position {
     font-size: 2em;
     cursor: pointer;
     margin-left: 20px;
+}
+
+/* ESSAI menu HAUT */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 5px;
+    }
+
+    nav.position {
+        flex-direction: row;
+        padding: 0 5px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .liste {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        background: #222;
+    }
+
+    .liste>li>a {
+        padding: 10px 12px;
+        font-size: 1em;
+    }
+
+    .sous-menu {
+        padding: 0;
+    }
+
+    .menu-toggle {
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
 }
 
 /* MENU Responsive */
