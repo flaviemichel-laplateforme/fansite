@@ -964,8 +964,17 @@ nav.position {
     align-items: center;
     justify-content: space-between;
     background: #222;
-    padding: 0 20px;
+    padding: 40px;
     position: relative;
+}
+
+footer {
+    padding: 40px;
+}
+
+.titreh1 {
+    width: 100%;
+    padding: 40px;
 }
 
 .logo img {
