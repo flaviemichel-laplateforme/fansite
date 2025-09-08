@@ -86,9 +86,14 @@ footer {
     background-color: #333;
 }
 
+.titreListe {
+    color: rgb(255, 255, 255);
+
+}
 
 .liste {
     list-style: none;
+    color: rgb(255, 255, 255);
 }
 
 .titreLi {
@@ -116,12 +121,38 @@ footer {
     text-decoration: none;
 }
 
+
+
 .menu ul li a:hover {
     background-color: #575757;
 }
 
+#article1 {}
 
+#realisation1 {
+    margin-top: 50px;
+}
 
+#realisation2 {
+    margin-top: 50px;
+
+}
+
+#realisation3 {
+    margin-top: 50px;
+}
+
+#realisation4 {
+    margin-top: 50px;
+}
+
+#realisation5 {
+    margin-top: 50px;
+}
+
+#realisation6 {
+    margin-top: 50px;
+}
 
 
 /***********************************************************main*********************************************/
