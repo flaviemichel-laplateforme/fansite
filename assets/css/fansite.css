@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 main {
@@ -40,7 +41,7 @@ footer {
 .liste2 {
     display: flex;
     /* Affiche les logos en ligne */
-    gap: 25pxcm;
+    gap: 25px;
     /* Espace entre les logos */
     align-items: center;
     /* Aligne les logos verticalement */
@@ -64,7 +65,7 @@ footer {
 .logo-container2 {
     display: flex;
     /* Affiche les logos en ligne */
-    gap: 25pxcm;
+    gap: 25px;
     /* Espace entre les logos */
     align-items: center;
     /* Aligne les logos verticalement */
@@ -383,7 +384,8 @@ footer a:hover {
 }
 
 .album-container>p {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
@@ -440,7 +442,8 @@ footer a:hover {
 }
 
 .evenement-container>p {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
@@ -535,6 +538,13 @@ footer a:hover {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+
+.video-flex iframe {
+    width: 560px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
 }
 
 /* ************************************LIENS RESEAUX SOCIAUX************************** */
