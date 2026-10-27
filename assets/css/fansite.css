@@ -762,6 +762,24 @@ button:focus-visible {
 
 /* ********************************* 12. RESPONSIVE ********************************* */
 
+/* Écrans moyens : les 9 entrées du menu passent sur deux lignes si besoin */
+@media (max-width: 1200px) {
+    nav.site-nav {
+        flex-wrap: wrap;
+        gap: 8px 20px;
+    }
+
+    .main-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 6px;
+    }
+
+    .main-menu>li>a {
+        padding: 10px 12px;
+    }
+}
+
 /* Tablette : menu burger */
 @media (max-width: 800px) {
     nav.site-nav {
