@@ -37,6 +37,18 @@ Un site vitrine de 10 pages autour de l'artiste :
 - **Accessibilité** : lien d'évitement, focus clavier visible, textes alternatifs, contrastes vérifiés
 - **Performance et SEO** : images en `loading="lazy"` avec dimensions, balises `description` et Open Graph, contenus tiers en mode respectueux de la vie privée (`youtube-nocookie.com`)
 
+## Qualité mesurée
+
+Audit [Lighthouse](https://developer.chrome.com/docs/lighthouse) 13.4.1 de la page d'accueil en ligne, le 27 octobre 2026 (mobile émulé Moto G Power, réseau 4G lent) :
+
+| Performance | Accessibilité | Bonnes pratiques | SEO |
+|:---:|:---:|:---:|:---:|
+| **98** | **100** | **100** | **100** |
+
+- Premier affichage (FCP) : 1,1 s · plus grand affichage (LCP) : 1,3 s · décalage de mise en page (CLS) : 0
+- Bonnes pratiques passées de 77 à 100 en chargeant le lecteur Spotify au clic (plus de cookies tiers au chargement de la page)
+- Les scores varient légèrement d'une mesure à l'autre
+
 ## Arborescence
 
 ```
