@@ -2,7 +2,7 @@
 
 Fan site **non officiel** consacré à Naâman, chanteur reggae français, réalisé en HTML, CSS et JavaScript vanilla dans le cadre de ma formation à [La Plateforme](https://laplateforme.io/).
 
-**[Voir le site en ligne](https://flaviemichel-laplateforme.github.io/fansite/)**
+**[Voir le site en ligne](https://flavie-michel.students-laplateforme.io/fansite/)**
 
 <!-- Captures : ajouter docs/screenshots/desktop.png et docs/screenshots/mobile.png, puis décommenter
 <p>
