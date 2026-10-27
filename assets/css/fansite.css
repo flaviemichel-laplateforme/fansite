@@ -433,6 +433,19 @@ form {
     padding: 60px;
 }
 
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border: 0;
+}
+
+legend {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 label {
     margin-bottom: 5px;
     font-weight: bold;

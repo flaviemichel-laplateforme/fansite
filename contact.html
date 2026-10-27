@@ -161,25 +161,32 @@
         <section id="contact">
             <p class="demo-info">Formulaire de démonstration : aucun message n'est envoyé.</p>
             <form>
-                <label for="civilite">Civilité :</label>
-                <select id="civilite" name="civilite" required>
-                    <option value="">-- Sélectionnez --</option>
-                    <option value="Mr">Monsieur</option>
-                    <option value="Mme">Madame</option>
-                    <option value="Autre">Autre</option>
-                </select>
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
 
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" placeholder="nom" required>
+                    <label for="civilite">Civilité :</label>
+                    <select id="civilite" name="civilite" autocomplete="honorific-prefix" required>
+                        <option value="">-- Sélectionnez --</option>
+                        <option value="Mr">Monsieur</option>
+                        <option value="Mme">Madame</option>
+                        <option value="Autre">Autre</option>
+                    </select>
 
-                <label for="Prenom">Prénom :</label>
-                <input type="text" id="Prenom" name="Prenom" placeholder="Prénom" required>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" autocomplete="family-name" required>
 
-                <label for="Portable">Numéro de téléphone :</label>
-                <input type="tel" id="Portable" name="Portable" placeholder="EX: 06 12 34 56 78" required>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" autocomplete="given-name"
+                        required>
 
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" placeholder="EX: e-mail@gmail.com" required>
+                    <label for="telephone">Numéro de téléphone (facultatif) :</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Ex : 06 12 34 56 78"
+                        autocomplete="tel" pattern="[0-9 +().\-]{6,20}">
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Ex : e-mail@gmail.com"
+                        autocomplete="email" required>
+                </fieldset>
 
                 <label for="message">Message :</label>
                 <textarea id="message" name="message" rows="5" required></textarea>

@@ -4,7 +4,7 @@ const confirmation = document.getElementById("confirmation");
 
 formulaire.addEventListener("submit", (event) => {
     event.preventDefault();
-    const prenom = formulaire.elements.Prenom.value.trim();
+    const prenom = formulaire.elements.prenom.value.trim();
     confirmation.textContent = `Merci ${prenom} ! (Démo : aucun message n'a été envoyé.)`;
     formulaire.reset();
 });
