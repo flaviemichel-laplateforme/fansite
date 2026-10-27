@@ -36,6 +36,18 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
+    font-family: var(--police-texte);
+    line-height: 1.5;
+}
+
+/* Les éléments de formulaire et de navigation héritent de la police du site */
+nav a,
+footer a,
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
 }
 
 main {
@@ -69,14 +81,16 @@ nav.site-nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 40px;
+    padding: 12px 40px;
     background: var(--fond-nav);
 }
 
+/* Logo rogné en cercle (l'image source n'est pas carrée) */
 .logo img {
     display: block;
-    height: 60px;
-    width: auto;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -105,7 +119,9 @@ nav.site-nav {
     display: block;
     padding: 14px 18px;
     color: #fff;
+    font-size: 0.95rem;
     font-weight: bold;
+    white-space: nowrap;
     text-decoration: none;
     border-radius: 4px;
     transition: background 0.2s;
@@ -170,6 +186,7 @@ nav.site-nav {
 
 /* ********************************* 4. TITRES & TEXTES ********************************* */
 .page-title {
+    padding: 8px 16px;
     color: rgb(7, 7, 7);
     text-align: center;
     font-size: 50px;
@@ -189,6 +206,7 @@ nav.site-nav {
 
 .section-heading {
     margin-top: 20px;
+    padding: 8px 16px;
     color: rgb(7, 7, 7);
     text-align: center;
     font-size: xx-large;
@@ -196,12 +214,19 @@ nav.site-nav {
     background: var(--degrade-titre);
 }
 
+/* Largeur de lecture limitée, texte jamais collé aux bords */
 .article-text {
-    margin-top: 20px;
+    max-width: 70ch;
+    margin: 20px auto;
+    padding: 0 20px;
     color: rgb(3, 3, 3);
     font-size: 16px;
     text-align: center;
     font-family: var(--police-texte);
+}
+
+.article-text p+p {
+    margin-top: 1em;
 }
 
 .quote {
@@ -226,10 +251,18 @@ blockquote p+p {
     font-style: italic;
 }
 
+/* Les figures ne dépassent jamais 900px, l'image reste centrée avec sa légende */
+figure {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
 .image {
     display: block;
     width: 100%;
     height: auto;
+    margin: 0 auto;
     border-radius: 8px;
 }
 
