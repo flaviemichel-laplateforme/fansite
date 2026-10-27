@@ -13,7 +13,7 @@ Fan site **non officiel** consacré à Naâman, chanteur reggae français, réal
 
 ## Le projet
 
-Un site vitrine de 9 pages autour de l'artiste :
+Un site vitrine de 10 pages autour de l'artiste :
 
 | Page | Contenu |
 |---|---|
@@ -25,6 +25,7 @@ Un site vitrine de 9 pages autour de l'artiste :
 | Vidéos | Lives intégrés depuis YouTube |
 | Réseaux sociaux | Liens vers les plateformes et les sites de fans |
 | Contact | Formulaire (démonstration, aucun envoi) |
+| À propos | Pourquoi ce projet, choix techniques, difficultés |
 | Mentions légales | Éditrice, hébergement, crédits, cookies |
 
 ## Compétences mises en œuvre
@@ -41,7 +42,7 @@ Un site vitrine de 9 pages autour de l'artiste :
 ```
 fansite/
 ├── index.html, actualite.html, realisations.html, evenements.html,
-│   photos.html, videos.html, liens.html, contact.html, mentions-legales.html
+│   photos.html, videos.html, liens.html, contact.html, a-propos.html, mentions-legales.html
 └── assets/
     ├── css/fansite.css
     ├── js/menu.js, contact.js
@@ -51,6 +52,17 @@ fansite/
 ## Lancer en local
 
 Aucune dépendance : ouvrir `index.html` dans un navigateur, ou servir le dossier avec n'importe quel serveur statique (Laragon, `python -m http.server`…).
+
+## Sources du contenu
+
+Le contenu a été vérifié et recoupé (dernière vérification : octobre 2026). Tout ce qui n'a pas pu être confirmé a été retiré ou signalé « date non précisée ».
+
+- Biographie : [Wikipédia](https://en.wikipedia.org/wiki/Na%C3%A2man), [Tendance Ouest](https://www.tendanceouest.com/actualite-426352-dieppe-la-ville-va-rendre-hommage-a-naaman-l-enfant-du-pays)
+- Discographie : Wikipédia, [AllMusic](https://www.allmusic.com/album/beyond-mw0003119287/corrections), [Reggae.be](https://www.reggae.be/en/magazine/archive/2015-12-22-naaman-rays-of-resistance-soulbeats-records-big-sc/), Amazon Music
+- Évènements : [Surf Report](https://www.surf-report.com/news/factories/reggae-sun-ska-festival-21eme-edition-201186513.html), [Paris Bouge](https://www.parisbouge.com/events/232536)
+- Actualité : [Charts in France](https://www.chartsinfrance.net/Naaman/news-131536.html)
+
+Points encore à confirmer : titres des morceaux d'*Deep Rockers, Back a Yard* et de *Beyond*, dates précises des lives (La Cigale, Dub Inc, La Bellevilloise, Rototom).
 
 ## Crédits et droits
 

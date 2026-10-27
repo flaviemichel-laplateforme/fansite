@@ -524,6 +524,16 @@ button:hover {
     line-height: 1.6;
 }
 
+.mentions ul {
+    margin: 10px 0;
+    padding-left: 22px;
+}
+
+.mentions li {
+    margin-top: 6px;
+    line-height: 1.6;
+}
+
 /* ********************************* 10. FOOTER ********************************* */
 footer {
     width: 100%;
