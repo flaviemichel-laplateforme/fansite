@@ -63,7 +63,7 @@ header {
     width: 100%;
 }
 
-nav.position {
+nav.site-nav {
     position: relative;
     display: flex;
     align-items: center;
@@ -90,18 +90,18 @@ nav.position {
     cursor: pointer;
 }
 
-.liste {
+.main-menu {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 20px;
 }
 
-.liste>li {
+.main-menu>li {
     position: relative;
 }
 
-.liste>li>a {
+.main-menu>li>a {
     display: block;
     padding: 14px 18px;
     color: #fff;
@@ -111,12 +111,12 @@ nav.position {
     transition: background 0.2s;
 }
 
-.liste>li>a:hover {
+.main-menu>li>a:hover {
     background: var(--fond-survol);
 }
 
 /* Sous-menu */
-.sous-menu {
+.submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -129,12 +129,12 @@ nav.position {
     z-index: 10;
 }
 
-.liste>li:hover .sous-menu,
-.liste>li:focus-within .sous-menu {
+.main-menu>li:hover .submenu,
+.main-menu>li:focus-within .submenu {
     display: block;
 }
 
-.sous-menu li a {
+.submenu li a {
     display: block;
     padding: 10px 18px;
     color: #fff;
@@ -143,23 +143,23 @@ nav.position {
     border-bottom: 1px solid var(--fond-survol);
 }
 
-.sous-menu li a:hover {
+.submenu li a:hover {
     background: #555;
 }
 
-.sous-menu ul {
+.submenu ul {
     list-style: none;
 }
 
-.sous-menu li li:last-child a {
+.submenu li li:last-child a {
     border-bottom: none;
 }
 
-.liste>li>a[aria-current="page"] {
+.main-menu>li>a[aria-current="page"] {
     background: var(--fond-survol);
 }
 
-.titreListe {
+.submenu-title {
     display: block;
     padding: 10px 18px;
     color: var(--jaune);
@@ -169,7 +169,7 @@ nav.position {
 }
 
 /* ********************************* 4. TITRES & TEXTES ********************************* */
-.titreh11 {
+.page-title {
     color: rgb(7, 7, 7);
     text-align: center;
     font-size: 50px;
@@ -177,7 +177,7 @@ nav.position {
     background: var(--degrade-titre);
 }
 
-.titreh1 {
+.page-title-compact {
     width: 100%;
     padding: 40px;
     color: rgb(7, 7, 7);
@@ -187,7 +187,7 @@ nav.position {
     background: var(--degrade-titre);
 }
 
-.titreh2 {
+.section-heading {
     margin-top: 20px;
     color: rgb(7, 7, 7);
     text-align: center;
@@ -196,7 +196,7 @@ nav.position {
     background: var(--degrade-titre);
 }
 
-.texteArt {
+.article-text {
     margin-top: 20px;
     color: rgb(3, 3, 3);
     font-size: 16px;
@@ -228,8 +228,8 @@ figcaption {
 }
 
 /* ********************************* 5. RÉALISATIONS / ÉVÈNEMENTS ********************************* */
-.album-container,
-.evenement-container {
+.release,
+.event {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -239,30 +239,30 @@ figcaption {
 }
 
 /* Le titre h3 reprend l'apparence du lien qu'il contient */
-.album-container h3,
-.evenement-container h3 {
+.release h3,
+.event h3 {
     font: inherit;
 }
 
-.album-container img,
-.evenement-container img {
+.release img,
+.event img {
     width: 200px;
     height: auto;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.album-container img:hover,
-.evenement-container img:hover {
+.release img:hover,
+.event img:hover {
     transform: scale(1.5);
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.album-container>p,
-.evenement-container>p,
-.album-container>.details,
-.evenement-container>.details {
+.release>p,
+.event>p,
+.release>.details,
+.event>.details {
     width: 100%;
     max-width: 500px;
     font-size: large;
@@ -279,8 +279,8 @@ figcaption {
     margin-top: 4px;
 }
 
-.album-container a,
-.evenement-container a {
+.release a,
+.event a {
     color: black;
     font-size: x-large;
     font-family: var(--police-texte);
@@ -288,8 +288,8 @@ figcaption {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.album-container a:hover,
-.evenement-container a:hover {
+.release a:hover,
+.event a:hover {
     color: var(--orange);
     text-decoration: underline;
     transform: scale(1.05);
@@ -303,8 +303,7 @@ figcaption {
     padding: 40px 20px;
 }
 
-.section-title,
-.section-title2 {
+.section-title {
     margin-bottom: 20px;
     padding-left: 10px;
     font-size: 1.8em;
@@ -348,13 +347,13 @@ figcaption {
 }
 
 /* ********************************* 8. LIENS / RÉSEAUX SOCIAUX ********************************* */
-.logo-container,
-.logo-container2,
+.social-links,
+.footer-social,
 #liens-fans {
     list-style: none;
 }
 
-.logo-container {
+.social-links {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -363,21 +362,21 @@ figcaption {
     padding: 50px;
 }
 
-.logo-container img {
+.social-links img {
     width: 100px;
     height: auto;
     object-fit: contain;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.logo-container a img:hover {
+.social-links a img:hover {
     box-shadow: 0 0 12px rgba(21, 255, 0, 0.6),
         0 0 24px rgba(234, 205, 45, 0.6),
         0 0 36px rgba(216, 49, 3, 0.6);
     transform: scale(1.2);
 }
 
-.titreReseauh2 {
+.section-heading--reseaux {
     margin-top: 20px;
     color: rgb(7, 7, 7);
     text-align: center;
@@ -523,7 +522,7 @@ footer a {
     border-radius: 12px;
 }
 
-.liste2 {
+.footer-links {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -532,18 +531,18 @@ footer a {
     padding: 20px;
 }
 
-.liste2 a {
+.footer-links a {
     transition: transform 0.3s ease, color 0.3s ease, background 0.3s ease;
 }
 
-.liste2 a:hover {
+.footer-links a:hover {
     color: var(--orange);
     text-decoration: underline;
     background: var(--vert);
     transform: scale(1.05);
 }
 
-.logo-container2 {
+.footer-social {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -552,28 +551,28 @@ footer a {
     padding: 20px;
 }
 
-.logo-container2 img {
+.footer-social img {
     width: 40px;
     height: auto;
     object-fit: contain;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.logo-container2 a img:hover {
+.footer-social a img:hover {
     box-shadow: 0 0 12px rgba(72, 20, 205, 0.6),
         0 0 24px rgba(234, 205, 45, 0.6),
         0 0 36px rgba(216, 49, 3, 0.6);
     transform: scale(1.2);
 }
 
-.texte3 {
+.footer-credits {
     margin-top: 20px;
     color: white;
     font-size: 14px;
     text-align: center;
 }
 
-.texte3 a {
+.footer-credits a {
     text-decoration: underline;
 }
 
@@ -648,7 +647,7 @@ button:focus-visible {
 
 /* Tablette : menu burger */
 @media (max-width: 800px) {
-    nav.position {
+    nav.site-nav {
         flex-wrap: wrap;
         padding: 10px 20px;
     }
@@ -657,7 +656,7 @@ button:focus-visible {
         display: block;
     }
 
-    .liste {
+    .main-menu {
         display: none;
         flex-direction: column;
         align-items: stretch;
@@ -666,39 +665,39 @@ button:focus-visible {
         margin-top: 10px;
     }
 
-    .liste.open {
+    .main-menu.open {
         display: flex;
     }
 
-    .liste>li>a {
+    .main-menu>li>a {
         border-radius: 0;
         border-bottom: 1px solid var(--fond-sous-menu);
     }
 
-    .sous-menu {
+    .submenu {
         position: static;
         min-width: 0;
         box-shadow: none;
         border-radius: 0;
     }
 
-    .sous-menu li a {
+    .submenu li a {
         padding-left: 36px;
         white-space: normal;
     }
 
-    .album-container,
-    .evenement-container,
-    .logo-container,
+    .release,
+    .event,
+    .social-links,
     #liens-fans {
         padding: 30px 20px;
     }
 
-    .titreh11 {
+    .page-title {
         font-size: clamp(28px, 8vw, 50px);
     }
 
-    .titreh1 {
+    .page-title-compact {
         padding: 30px 20px;
     }
 
@@ -721,17 +720,17 @@ button:focus-visible {
         font-size: 1.5em;
     }
 
-    .titreh1 {
+    .page-title-compact {
         padding: 15px 10px;
         font-size: 20px;
     }
 
-    .titreh2,
-    .titreReseauh2 {
+    .section-heading,
+    .section-heading--reseaux {
         font-size: 1.4em;
     }
 
-    .texteArt {
+    .article-text {
         margin-top: 10px;
         padding: 0 5px;
         font-size: 14px;
@@ -743,9 +742,9 @@ button:focus-visible {
         margin-top: 20px;
     }
 
-    .album-container,
-    .evenement-container,
-    .logo-container,
+    .release,
+    .event,
+    .social-links,
     #liens-fans {
         flex-direction: column;
         gap: 10px;
@@ -753,8 +752,8 @@ button:focus-visible {
         text-align: center;
     }
 
-    .album-container img,
-    .evenement-container img,
+    .release img,
+    .event img,
     .photo-flex img,
     #liens-fans a img {
         width: 100%;
@@ -763,8 +762,8 @@ button:focus-visible {
     }
 
     /* Pas de zoom x1.5 au toucher : l'image sortirait de l'écran */
-    .album-container img:hover,
-    .evenement-container img:hover {
+    .release img:hover,
+    .event img:hover {
         transform: none;
     }
 
@@ -773,8 +772,7 @@ button:focus-visible {
         padding: 20px 10px;
     }
 
-    .section-title,
-    .section-title2 {
+    .section-title {
         font-size: 1.4em;
     }
 
@@ -799,18 +797,18 @@ button:focus-visible {
         padding: 20px 10px;
     }
 
-    .liste2,
-    .logo-container2 {
+    .footer-links,
+    .footer-social {
         flex-direction: column;
         gap: 10px;
         padding: 10px 0;
     }
 
-    .logo-container2 img {
+    .footer-social img {
         width: 30px;
     }
 
-    .texte3 {
+    .footer-credits {
         margin-top: 5px;
         font-size: 12px;
     }
