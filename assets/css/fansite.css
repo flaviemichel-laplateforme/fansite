@@ -204,6 +204,23 @@ nav.site-nav {
     font-family: var(--police-texte);
 }
 
+.quote {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+blockquote {
+    padding: 15px 20px;
+    font-style: italic;
+    text-align: left;
+    border-left: 4px solid var(--accent);
+    background: #faf6ee;
+}
+
+blockquote p+p {
+    margin-top: 12px;
+}
+
 .sources {
     font-size: 0.85em;
     font-style: italic;
