@@ -204,6 +204,11 @@ nav.site-nav {
     font-family: var(--police-texte);
 }
 
+.sources {
+    font-size: 0.85em;
+    font-style: italic;
+}
+
 .image {
     display: block;
     width: 100%;
