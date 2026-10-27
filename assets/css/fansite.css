@@ -635,6 +635,34 @@ footer a {
     border-radius: 12px;
 }
 
+/* Espace réservé de la même hauteur que le lecteur : pas de saut de page au clic */
+.spotify-facade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 700px;
+    min-height: 152px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #121212;
+    border-radius: 12px;
+}
+
+.spotify-facade button {
+    padding: 12px 24px;
+    color: #000;
+    background: #1db954;
+    border-radius: 999px;
+}
+
+.spotify-facade p {
+    font-size: 0.85em;
+    color: #b3b3b3;
+}
+
 .footer-links {
     display: flex;
     flex-wrap: wrap;

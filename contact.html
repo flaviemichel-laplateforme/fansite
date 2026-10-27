@@ -201,9 +201,11 @@
 
         <section>
             <div>
-                <iframe class="spotify" title="Écouter Naâman sur Spotify"
-                    src="https://open.spotify.com/embed/artist/2Gkz5N7rWiCE3jlCgsw1yp" height="152" loading="lazy"
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <div class="spotify-facade" data-src="https://open.spotify.com/embed/artist/2Gkz5N7rWiCE3jlCgsw1yp">
+                    <button type="button">▶ Écouter Naâman sur Spotify</button>
+                    <p>Le lecteur se charge au clic (Spotify dépose des cookies).</p>
+                    <noscript><a href="https://open.spotify.com/intl-fr/artist/2Gkz5N7rWiCE3jlCgsw1yp" target="_blank" rel="noopener">Écouter sur Spotify</a></noscript>
+                </div>
             </div>
         </section>
 
@@ -251,6 +253,7 @@
         ⬆
     </a>
     <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/spotify.js" defer></script>
     <script src="./assets/js/contact.js" defer></script>
 </body>
 
