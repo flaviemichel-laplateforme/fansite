@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 
-<html>
-
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/css/fansite.css" rel="stylesheet" />
-    <title>Fan site de Naaman</title>
+    <title>Fan site de Naâman</title>
+    <meta name="description" content="Fan site non officiel consacré à Naâman, chanteur reggae français : biographie, albums, concerts, photos et vidéos.">
+    <link rel="icon" href="./assets/img/logo.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fan site de Naâman">
+    <meta property="og:description" content="Fan site non officiel consacré à Naâman, chanteur reggae français : biographie, albums, concerts, photos et vidéos.">
+    <meta property="og:image" content="https://flaviemichel-laplateforme.github.io/fansite/assets/img/naaman-scene.jpg">
+    <meta property="og:url" content="https://flaviemichel-laplateforme.github.io/fansite/">
 </head>
 
 <!-- "body" -->
 
 <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
 
     <!--------------------------------------header-------------------------------------------------------------->
     <header>
         <nav class="position">
             <div class="logo">
                 <a href="index.html">
-                    <img width="200px" src="./assets/img/4424.jpg" alt="Logo">
+                    <img width="750" height="420" src="./assets/img/logo.jpg" alt="Logo">
                 </a>
             </div>
-            <!-- Bouton burger -->
-            <button class="menu-toggle" aria-label="Ouvrir le menu">&#9776;</button>
-            <ul class="liste">
+            <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+            <ul class="liste" id="menu">
                 <li><a href="./index.html">Accueil</a></li>
 
                 <li>
-                    <a href="./actualité.html">Actualité</a>
+                    <a href="./actualite.html">Actualité</a>
                     <ul class="sous-menu">
                         <li class="titreListe">NEWS</li>
-                        <li><a href="./actualité.html#news1">Naâman : la planète reggae en deuil</a></li>
+                        <li><a href="./actualite.html#article1">Naâman : la planète reggae en deuil</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="./réalisations.html">Réalisation</a>
+                    <a href="./realisations.html">Réalisation</a>
                     <ul class="sous-menu">
                         <li class="titreListe">ALBUMS</li>
-                        <li><a href="./réalisations.html#realisation1">Deep Rockers, Back a Yard</a></li>
-                        <li><a href="./réalisations.html#realisation2">Rays of Resistance</a></li>
-                        <li><a href="./réalisations.html#realisation3">Beyond</a></li>
-                        <li><a href="./réalisations.html#realisation4">Official</a></li>
-                        <li><a href="./réalisations.html#realisation5">Temple Road</a></li>
+                        <li><a href="./realisations.html#realisation1">Deep Rockers, Back a Yard</a></li>
+                        <li><a href="./realisations.html#realisation2">Rays of Resistance</a></li>
+                        <li><a href="./realisations.html#realisation3">Beyond</a></li>
+                        <li><a href="./realisations.html#realisation4">Official</a></li>
+                        <li><a href="./realisations.html#realisation5">Temple Road</a></li>
 
                         <li class="titreListe">MIXTAPES & EPs</li>
-                        <li><a href="./réalisations.html#mixtapes1">Know Yourself Mixtape</a></li>
-                        <li><a href="./réalisations.html#mixtapes2">Unplugged (Live acoustic EP)</a></li>
+                        <li><a href="./realisations.html#mixtapes1">Know Yourself Mixtape</a></li>
+                        <li><a href="./realisations.html#mixtapes2">Unplugged (Live acoustic EP)</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="./evènements.html">Evènements</a>
+                    <a href="./evenements.html">Évènements</a>
                     <ul class="sous-menu">
                         <li class="titreListe">CONCERTS / EVENEMENTS LIVE</li>
-                        <li><a href="./evènements.html#evenement1">Live à La Cigale</a></li>
-                        <li><a href="./evènements.html#evenement2">Live at Reggae Sun Ska</a></li>
-                        <li><a href="./evènements.html#evenement3">Live Sessions (YouTube series)</a></li>
-                        <li><a href="./evènements.html#evenement4">Live at Festival des Vieilles Charrues</a></li>
-                        <li><a href="./evènements.html#evenement5">Live at Rototom Sunsplash</a></li>
-                        <li><a href="./evènements.html#evenement6">Live dub inc</a></li>
-                        <li><a href="./evènements.html#evenement7">Live at La Bellevilloise</a></li>
-                        <li><a href="./evènements.html#evenement8">Know Yourself Mixtape</a></li>
-                        <li><a href="./evènements.html#evenement9">Unplugged (Live acoustic EP)</a></li>
+                        <li><a href="./evenements.html#evenement1">Live à La Cigale</a></li>
+                        <li><a href="./evenements.html#evenement2">Live at Reggae Sun Ska</a></li>
+                        <li><a href="./evenements.html#evenement3">Live Sessions (YouTube series)</a></li>
+                        <li><a href="./evenements.html#evenement4">Live at Festival des Vieilles Charrues</a></li>
+                        <li><a href="./evenements.html#evenement5">Live at Rototom Sunsplash</a></li>
+                        <li><a href="./evenements.html#evenement6">Live dub inc</a></li>
+                        <li><a href="./evenements.html#evenement7">Live at La Bellevilloise</a></li>
+                        <li><a href="./evenements.html#evenement8">Know Yourself Mixtape</a></li>
+                        <li><a href="./evenements.html#evenement9">Unplugged (Live acoustic EP)</a></li>
                     </ul>
                 </li>
 
@@ -79,15 +85,16 @@
                         <li class="titreListe">VOYAGES</li>
                         <li><a href="./photos.html#photos5">Voyages en Inde</a></li>
                         <li><a href="./photos.html#photos6">Voyages en Jamaique</a></li>
+                        <li><a href="./photos.html#photos7">Avec les fans</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="./vidéos.html">Vidéos</a>
+                    <a href="./videos.html">Vidéos</a>
                     <ul class="sous-menu">
                         <li class="titreListe">LIVE</li>
-                        <li><a href="./vidéos.html#video1">Live la cigale</a></li>
-                        <li><a href="./vidéos.html#video2">SUN SKA</a></li>
+                        <li><a href="./videos.html#video1">Live la cigale</a></li>
+                        <li><a href="./videos.html#video2">SUN SKA</a></li>
                     </ul>
                 </li>
 
@@ -95,22 +102,22 @@
                     <a href="./liens.html">Réseaux sociaux</a>
                     <ul class="sous-menu">
                         <li class="titreListe">Réseaux Sociaux</li>
-                        <li><a href="https://www.instagram.com/naaman_official/?hl=fr" target="_blank">Instagram</a>
+                        <li><a href="https://www.instagram.com/naaman_official/?hl=fr" target="_blank" rel="noopener">Instagram</a>
                         </li>
                         <li><a href="https://www.facebook.com/Naaman.Official/?locale=fr_FR"
-                                target="_blank">Facebook</a></li>
-                        <li><a href="https://www.youtube.com/user/NaamanOfficial" target="_blank">YouTube</a></li>
-                        <li><a href="https://twitter.com/NaamanOfficial" target="_blank">Twitter</a></li>
+                                target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/user/NaamanOfficial" target="_blank" rel="noopener">YouTube</a></li>
+                        <li><a href="https://x.com/NaamanOfficial" target="_blank" rel="noopener">X (Twitter)</a></li>
                         <li><a href="https://open.spotify.com/intl-fr/artist/2Gkz5N7rWiCE3jlCgsw1yp"
-                                target="_blank">Spotify</a></li>
-                        <li><a href="https://music.apple.com/fr/artist/na%C3%A2man/530658824" target="_blank">Apple
+                                target="_blank" rel="noopener">Spotify</a></li>
+                        <li><a href="https://music.apple.com/fr/artist/na%C3%A2man/530658824" target="_blank" rel="noopener">Apple
                                 Music</a></li>
-                        <li><a href="https://www.deezer.com/fr/artist/2577241" target="_blank">Deezer</a></li>
+                        <li><a href="https://www.deezer.com/fr/artist/2577241" target="_blank" rel="noopener">Deezer</a></li>
                         <li><a href="https://www.amazon.fr/s?k=naaman&i=digital-music&search-type=ss"
-                                target="_blank">Amazon Music</a></li>
+                                target="_blank" rel="noopener">Amazon Music</a></li>
 
                         <li class="titreListe">LIENS-FANS</li>
-                        <li><a href="https://www.last.fm/fr/music/Na%C3%A2man" target="_blank">Last.fm</a></li>
+                        <li><a href="https://www.last.fm/fr/music/Na%C3%A2man" target="_blank" rel="noopener">Last.fm</a></li>
                         <li><a href="https://www.partoch.com/forums/naaman" target="_blank"
                                 rel="noopener">Partoch.com</a></li>
                         <li><a href="https://www.musiculture.fr/naaman/" target="_blank"
@@ -128,11 +135,11 @@
     </header>
 
     <!-------------------------------------------------------main------------------------------------------------------------------------->
-    <main>
+    <main id="contenu">
         <section>
 
             <div>
-                <h1 class="titreh11"> Naaman</h1>
+                <h1 class="titreh11">Naâman</h1>
             </div>
 
             <div>
@@ -141,17 +148,15 @@
 
             <div class="texteArt">
                 <p>
-                    Naaman, de son vrai nom Malick Mendosa, est un chanteur français de reggae et de dancehall, né
-                    le 28 juillet 1990 à Paris. D'origine sénégalaise, il a grandi dans le quartier de La
-                    Courneuve, en banlieue parisienne, avant de se faire connaître grâce à sa voix unique et à un
-                    style mêlant reggae, dancehall et influences africaines.
+                    Naâman, de son vrai nom Martin Mussard, est un chanteur français de reggae, né le 25 février
+                    1990 à Dieppe, en Normandie. Passionné de reggae et de hip-hop depuis l'adolescence, il se fait
+                    connaître grâce à sa voix unique et à un style mêlant roots, dancehall et influences du monde.
                 </p>
                 <p>
-                    Il a sorti plusieurs albums et singles rencontrant un grand succès en France et à
-                    l'international, parmi lesquels "Stand Up", "Badman" ou encore "Galang". Ses textes engagés
-                    abordent des thèmes sociaux et politiques tels que la justice, l'égalité et la paix. En
-                    parallèle de sa carrière musicale, Naaman s'implique dans des actions humanitaires en faveur
-                    des enfants défavorisés en Afrique.
+                    Avec son équipe du Deep Rockers, il sort plusieurs albums, de "Deep Rockers, Back a Yard" à
+                    "Temple Road", portés par des titres comme "Outta Road", "House of Love" ou "Rebel for Life".
+                    Ses textes engagés abordent la paix, la liberté et la spiritualité. Il nous a quittés le
+                    7 février 2025.
                 </p>
             </div>
 
@@ -165,12 +170,12 @@
             </div>
             <div class="texteArt">
                 <p>
-                    🎂 Né le 28 juillet 1990 à Paris<br>
-                    🌍 Origines sénégalaises, grandi à La Courneuve<br>
-                    🎵 Style musical : reggae, dancehall, influences africaines<br>
+                    🎂 Né le 25 février 1990 à Dieppe (Normandie)<br>
+                    🎵 Style musical : reggae roots, dancehall, influences du monde<br>
                     💿 Plusieurs albums studio, de "Deep Rockers, Back a Yard" (2013) à "Temple Road"<br>
-                    ✊ Textes engagés : justice, égalité, paix<br>
-                    🤝 Impliqué dans des actions humanitaires en Afrique
+                    🌍 Voyages en Jamaïque et en Inde qui nourrissent sa musique<br>
+                    ✊ Textes engagés : paix, liberté, spiritualité<br>
+                    🕊️ Disparu le 7 février 2025
                 </p>
             </div>
         </section>
@@ -178,7 +183,7 @@
         <div class="separator"></div>
 
         <section>
-            <img class="image" src="./assets/img/5edf95844a71e_naaman_credit-mikael-thuillier-4554995.webp"
+            <img loading="lazy" width="930" height="620" class="image" src="./assets/img/naaman-portrait.webp"
                 alt="Portrait de Naaman, crédit photo Mikael Thuillier">
         </section>
 
@@ -190,17 +195,17 @@
             </div>
 
             <div class="album-container">
-                <a href="./réalisations.html">Ses albums</a>
-                <p>Toute la discographie de Naaman, de "Deep Rockers, Back a Yard" à "Temple Road".</p>
+                <a href="./realisations.html">Ses albums</a>
+                <p>Toute la discographie de Naâman, de "Deep Rockers, Back a Yard" à "Temple Road".</p>
             </div>
 
             <div class="album-container">
-                <a href="./actualité.html">Actualité</a>
+                <a href="./actualite.html">Actualité</a>
                 <p>Les dernières nouvelles autour de l'artiste.</p>
             </div>
 
             <div class="album-container">
-                <a href="./vidéos.html">Vidéos & Lives</a>
+                <a href="./videos.html">Vidéos & Lives</a>
                 <p>Concerts, clips et sessions live à revivre en vidéo.</p>
             </div>
         </section>
@@ -211,86 +216,72 @@
 
         <section>
             <div>
-                <audio controls autoplay>
-                    <source src="./assets/audio/Naâman - Outta Road (Clip Officiel)(1).mp3" type="audio/mpeg">
-                    Votre navigateur ne supporte pas la lecture audio.
-                </audio>
+                <iframe class="spotify" title="Écouter Naâman sur Spotify"
+                    src="https://open.spotify.com/embed/artist/2Gkz5N7rWiCE3jlCgsw1yp" height="152" loading="lazy"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
         </section>
 
         <section>
             <div class="liste2">
 
-
                 <a href="./index.html">Accueil</a>
 
+                <a href="./actualite.html">Actualité</a>
 
-                <a href="./actualité.html">Actualité</a>
+                <a href="./realisations.html">Réalisation</a>
 
-                <a href="./réalisations.html">Réalisation</a>
+                <a href="./evenements.html">Évènements</a>
 
-                <a href="./evènements.html"> Evènenements</a>
+                <a href="./photos.html">Photos</a>
 
-                <a href="./photos.html"> Photos </a>
+                <a href="./videos.html">Vidéos</a>
 
-                <a href="./vidéos.html"> Vidéos</a>
+                <a href="./liens.html">Réseaux sociaux</a>
 
-                <a href="./liens.html"> Réseaux sociaux</a>
+                <a href="./contact.html">Contact</a>
 
-                <a href="./contact.html"> Contact</a>
-
-
-
-
-
+                <a href="./mentions-legales.html">Mentions légales</a>
 
             </div>
 
-
-
             <div class="logo-container2">
 
-                <a href="https://www.instagram.com/naaman_official/?hl=fr" target="_blank">
-                    <img src="./assets/img/instagram-svgrepo-com.svg" alt="Suivre Naâman sur Instagram">
+                <a href="https://www.instagram.com/naaman_official/?hl=fr" target="_blank" rel="noopener">
+                    <img loading="lazy" src="./assets/img/instagram-svgrepo-com.svg" alt="Suivre Naâman sur Instagram">
 
                 </a>
-                <a href="https://www.facebook.com/Naaman.Official/?locale=fr_FR" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                <a href="https://www.facebook.com/Naaman.Official/?locale=fr_FR" target="_blank" rel="noopener">
+                    <img loading="lazy" src="./assets/img/facebook.svg"
                         alt="Naâman sur Facebook">
 
                 </a>
 
-                <a href="https://twitter.com/NaamanOfficial" target="_blank">
-                    <img src="./assets/img/twitter.png" alt="Naâman sur Twitter">
+                <a href="https://x.com/NaamanOfficial" target="_blank" rel="noopener">
+                    <img loading="lazy" src="./assets/img/x.svg" alt="Naâman sur X">
 
                 </a>
 
-                <a href="https://open.spotify.com/intl-fr/artist/2Gkz5N7rWiCE3jlCgsw1yp" target="_blank">
-                    <img src="./assets/img/spotify.png" alt="Naâman sur Spotify">
+                <a href="https://open.spotify.com/intl-fr/artist/2Gkz5N7rWiCE3jlCgsw1yp" target="_blank" rel="noopener">
+                    <img loading="lazy" width="225" height="225" src="./assets/img/spotify.png" alt="Naâman sur Spotify">
 
                 </a>
-
 
             </div>
         </section>
 
-
-
-        <article>
-
-            <p class="texte3">© Flavie Michel - Tous droits réservés.
-                |
-                Mentions légales | Cookies | Conditions générales de vente |
-            </p>
-        </article>
+        <p class="texte3">Fan site non officiel réalisé par Flavie Michel dans le cadre d'une formation à
+            La Plateforme. Naâman, ses œuvres et les photos appartiennent à leurs ayants droit respectifs.
+            · <a href="./mentions-legales.html">Mentions légales</a>
+        </p>
 
     </footer>
 
-    <a href="#" class="back-to-top" title="Remonter">
+    <a href="#" class="back-to-top" title="Remonter" aria-label="Remonter en haut de la page">
         ⬆
     </a>
 
+    <script src="./assets/js/menu.js" defer></script>
 </body>
-
 
 </html>
