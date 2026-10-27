@@ -629,6 +629,8 @@ footer a {
 .spotify {
     display: block;
     width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
     border: 0;
     border-radius: 12px;
 }
@@ -637,12 +639,14 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    gap: 25px;
+    justify-content: center;
+    gap: 12px 28px;
     padding: 20px;
 }
 
 .footer-links a {
+    padding: 4px 8px;
+    border-radius: 4px;
     transition: transform 0.3s ease, color 0.3s ease, background 0.3s ease;
 }
 
@@ -657,8 +661,8 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    gap: 25px;
+    justify-content: center;
+    gap: 24px;
     padding: 20px;
 }
 
@@ -677,9 +681,11 @@ footer a {
 }
 
 .footer-credits {
-    margin-top: 20px;
+    max-width: 800px;
+    margin: 20px auto 0;
     color: white;
     font-size: 14px;
+    line-height: 1.6;
     text-align: center;
 }
 
