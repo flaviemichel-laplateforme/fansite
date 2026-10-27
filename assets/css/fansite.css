@@ -220,6 +220,12 @@ nav.position {
     padding: 50px;
 }
 
+/* Le titre h3 reprend l'apparence du lien qu'il contient */
+.album-container h3,
+.evenement-container h3 {
+    font: inherit;
+}
+
 .album-container img,
 .evenement-container img {
     width: 200px;
